@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha | Web Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-main: #1a1a1a;
+            --text-muted: #555555;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        /* Project Grid */
+        .project-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .project-card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: #ffffff;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--text-main);
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: background-color 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--accent);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Hi, I'm Taha.</h1>
+            <div class="subtitle">Front-End Web Developer</div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>I build clean, fast, and responsive websites for clients, independent creators, and small studios. My focus is on writing clear HTML and custom CSS, implementing smooth page transitions, and setting up reliable hosting through platforms like GitHub Pages.</p>
+            <p>Whether you need a simple landing page, a central hub for your brand, or a custom design, I can help get your project online.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Selected Work</h2>
+            <div class="project-list">
+                
+                <!-- Project 1 -->
+                <a href="https://taha-tn.github.io/Xeno-Publishers/" target="_blank" class="project-card">
+                    <div class="project-title">Xeno Publishers</div>
+                    <p class="project-desc">A professional landing page and central hub designed for an independent game publishing studio.</p>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://taha-tn.github.io/xeno-games/" target="_blank" class="project-card">
+                    <div class="project-title">Xeno Games</div>
+                    <p class="project-desc">A dedicated promotional website built to showcase and support a custom Discord bot integration.</p>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://taha-tn.github.io/Xeno---Projects/index.html" target="_blank" class="project-card">
+                    <div class="project-title">Xeno Projects</div>
+                    <p class="project-desc">A multi-project portfolio hub created for a client to host and organize various links in one accessible location.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Currently available for new web development projects. If you need a website built or updated, feel free to reach out.</p>
+            <!-- Replace with your actual email -->
+            <a href="mailto:tniosbussiness@gmail.com" class="contact-btn">Email Me</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2026 Taha. Built with HTML & CSS.
+        </footer>
+    </div>
+
+</body>
+</html>
